@@ -4,7 +4,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { CalendarDays, CheckCircle2, Loader2, Lock, Mail, Users } from 'lucide-react';
 import Script from 'next/script';
 import { useCallback, useEffect, useRef, useState, type FormEvent, type ReactNode } from 'react';
-import { masterclass, site } from '@/config/site';
+import { LEGAL_PATHS, masterclass, site } from '@/config/site';
 import { track } from '@/lib/analytics';
 import { GOAL_EVENT, type Goal } from '@/lib/events';
 import {
@@ -309,15 +309,15 @@ export default function RegisterForm() {
           <input type="checkbox" data-field="consent" checked={values.consent} onChange={(e) => set('consent')(e.target.checked)} aria-invalid={!!errors.consent} aria-describedby={errors.consent ? 'err-consent' : undefined} className="mt-0.5 h-5 w-5 shrink-0 rounded border-slate-300 accent-[#16296a]" />
           <span>
             I agree to the{' '}
-            <a href="#privacy-policy" className="font-semibold text-brand-ink underline">
+            <a href={LEGAL_PATHS.privacy} target="_blank" rel="noopener" className="font-semibold text-brand-ink underline">
               Privacy Policy
             </a>
             ,{' '}
-            <a href="#terms" className="font-semibold text-brand-ink underline">
+            <a href={LEGAL_PATHS.terms} target="_blank" rel="noopener" className="font-semibold text-brand-ink underline">
               Terms
             </a>{' '}
             and{' '}
-            <a href="#refund-policy" className="font-semibold text-brand-ink underline">
+            <a href={LEGAL_PATHS.refund} target="_blank" rel="noopener" className="font-semibold text-brand-ink underline">
               Refund Policy
             </a>
             , and to be contacted about my enquiry.

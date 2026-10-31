@@ -9,7 +9,7 @@ const steps = [
   {
     Icon: Video,
     title: 'Join the live class',
-    text: `Get your personal ${masterclass.schedule.platform} link by email and join every session for ${masterclass.accessDays} days.`,
+    text: `Get your personal ${masterclass.schedule.platform} link by email and join every session of your batch.`,
   },
 ];
 

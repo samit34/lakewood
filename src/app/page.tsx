@@ -1,7 +1,6 @@
 import AnnouncementBar from '@/components/layout/AnnouncementBar';
 import Footer from '@/components/layout/Footer';
 import Header from '@/components/layout/Header';
-import LegalModal from '@/components/layout/LegalModal';
 import MobileCtaBar from '@/components/layout/MobileCtaBar';
 import WhatsAppButton from '@/components/layout/WhatsAppButton';
 import About from '@/components/sections/About';
@@ -45,7 +44,6 @@ export default function Home() {
       <Footer />
       <MobileCtaBar />
       <WhatsAppButton />
-      <LegalModal />
     </>
   );
 }

@@ -5,7 +5,6 @@
 export type Goal = 'spoken' | 'ielts' | 'pte';
 
 export const GOAL_EVENT = 'lw:select-goal';
-export const LEGAL_EVENT = 'lw:open-legal';
 
 /** Preselects the goal in the registration form and scrolls to it. */
 export function selectGoal(goal: Goal) {
